@@ -28,7 +28,7 @@ const EditTodoForm = ({editId, allTodos, setTodoInfo, hideTodoForm}) => {
                 onSubmit={updateTodo}
             >
                 <h1 className="text-lg font-semibold text-center">
-                    Update Todo
+                    Update Schedule
                 </h1>
 
                 <section className="flex flex-col items-center justify-center gap-3">

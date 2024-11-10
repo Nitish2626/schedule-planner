@@ -33,7 +33,7 @@ const App = () => {
   return (
     <div className='w-full flex flex-col items-center justify-center py-2'>
       <h1 className='text-2xl font-semibold'>
-        Todo App
+        Schedule Planner
       </h1>
 
       <section className='w-11/12 flex items-center mt-20 sm:w-6/12'>
@@ -67,7 +67,7 @@ const App = () => {
             />
           })
           : <h1 className="text-lg text-white font-semibold">
-              No Todos Found !
+              No Schedule Found !
             </h1>
         }
       </ul>
