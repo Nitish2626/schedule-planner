@@ -2,19 +2,19 @@ import React, { useEffect, useRef } from 'react';
 import FormInput from './FormInput';
 import Button from './Button';
 
-const EditTodoForm = ({editId, allTodos, setTodoInfo, hideTodoForm}) => {
+const EditTodoForm = ({ editId, allTodos, setTodoInfo, hideTodoForm }) => {
 
-    const todoRef= useRef();
+    const todoRef = useRef();
 
-    useEffect(()=>{
-        const findData= allTodos.find((v)=> v.id === editId);
-        todoRef.current.value= findData.todo;
-    },[]);
-    
-    const updateTodo=(e)=>{
+    useEffect(() => {
+        const findData = allTodos.find((v) => v.id === editId);
+        todoRef.current.value = findData.todo;
+    }, []);
+
+    const updateTodo = (e) => {
         e.preventDefault();
-        const updatedTodo= allTodos.map((v)=>
-            v.id === editId ? {...v, todo: todoRef.current.value, updatedAt: Date.now()} : v
+        const updatedTodo = allTodos.map((v) =>
+            v.id === editId ? { ...v, todo: todoRef.current.value, updatedAt: Date.now() } : v
         );
         localStorage.setItem("todos", JSON.stringify(updatedTodo));
         setTodoInfo(updatedTodo);
@@ -41,13 +41,13 @@ const EditTodoForm = ({editId, allTodos, setTodoInfo, hideTodoForm}) => {
 
                 <section className="flex items-center justify-center gap-2 text-lg">
                     <Button
-                        buttonType= "submit"
-                        buttonName="Update"
-                    />
-                    <Button
-                        buttonType= "button"
+                        buttonType="button"
                         buttonName="Cancel"
                         buttonFunc={() => hideTodoForm(false)}
+                    />
+                    <Button
+                        buttonType="submit"
+                        buttonName="Update"
                     />
                 </section>
             </form>

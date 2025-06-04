@@ -3,23 +3,23 @@ import FormInput from './FormInput';
 import Button from './Button';
 import "crypto";
 
-const AddTodoForm = ({todos, setTodoInfo, hideTodoForm}) => {
+const AddTodoForm = ({ todos, setTodoInfo, hideTodoForm }) => {
 
-    const todoRef= useRef();
+    const todoRef = useRef();
 
-    const addTodo=(e)=>{
+    const addTodo = (e) => {
         e.preventDefault();
-        const saveTodo=[
+        const saveTodo = [
             {
                 id: crypto.randomUUID(),
-                todo : todoRef.current.value,
+                todo: todoRef.current.value,
                 createdAt: Date.now(),
                 updatedAt: Date.now()
             },
             ...todos
         ]
         setTodoInfo(saveTodo);
-        localStorage.setItem("todos",JSON.stringify(saveTodo));
+        localStorage.setItem("todos", JSON.stringify(saveTodo));
         hideTodoForm(false);
     };
 
@@ -43,13 +43,13 @@ const AddTodoForm = ({todos, setTodoInfo, hideTodoForm}) => {
 
                 <section className="flex items-center justify-center gap-2 text-lg">
                     <Button
-                        buttonType= "submit"
-                        buttonName="Add"
-                    />
-                    <Button
-                        buttonType= "button"
+                        buttonType="button"
                         buttonName="Cancel"
                         buttonFunc={() => hideTodoForm(false)}
+                    />
+                    <Button
+                        buttonType="submit"
+                        buttonName="Add"
                     />
                 </section>
             </form>
