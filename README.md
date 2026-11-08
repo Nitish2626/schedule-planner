@@ -8,10 +8,9 @@ A simple and responsive schedule planner built with React and Vite. It helps you
 
 ## Tech Stack
 
-![Next.js](https://img.shields.io/badge/Next.js-16.1.6-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-6.x-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-4.x-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![React.js](https://img.shields.io/badge/React.js-18.2.66-black)
+![JavaScript](https://img.shields.io/badge/JavaScript-20.0-3178C6)
+![Tailwind](https://img.shields.io/badge/Tailwind-4.x-06B6D4)
 
 ## Why this project
 
