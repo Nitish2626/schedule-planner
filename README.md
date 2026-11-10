@@ -16,7 +16,7 @@ Live App: https://schedulemyday.netlify.app/
 
 This project was created to make daily planning easier, faster, and more organized. It gives users a clean way to manage tasks without needing a heavy app or complicated setup. The goal is to keep schedules simple, accessible, and easy to update whenever priorities change.
 
-## Features
+## Key Features
 
 - Add new schedule items
 - Search tasks instantly
