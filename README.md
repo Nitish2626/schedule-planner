@@ -1,10 +1,12 @@
 # Schedule Planner
 
 <div align="center">
-  <img src="public/logo.png" alt="Schedule Planner Logo" width="100" />
+  <img src="public/logo.png" alt="Schedule Planner" width="100" />
 </div>
 
 A simple and responsive schedule planner built with React and Vite. It helps you manage daily tasks, search through your list, and keep track of important updates with a clean interface.
+
+Live App: https://schedulemyday.netlify.app/
 
 ![React.js](https://img.shields.io/badge/React.js-16.1.6-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-5.x-3178C6)
